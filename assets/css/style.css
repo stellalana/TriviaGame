@@ -1,0 +1,68 @@
+
+   .jumbotron {
+    box-sizing: border-box;
+    height: 600px;
+    margin: 2% 25%;
+    background-image: url("./assets/images/godbackground.jpg");
+  }
+  
+  .answer-container {
+    margin-top: 175px;
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .clockClass {
+    margin-top: 40px;
+  }
+  
+  .start-button {
+    padding-top: 7px;
+    height: 45px;
+    color: black;
+    padding-left: 14px;
+    background-color: rgba(65, 105, 225, 0.548);
+    border-radius: 4px;
+    padding-right: 20px;
+    padding: 7px 20px;
+  }
+
+  .answer:hover {
+    background: goldenrod;
+  }
+  
+  .answer {
+    padding-top: 7px;
+    height: 45px;
+    color: black;
+    padding-left: 14px;
+    background-color: royalblue;
+    border-radius: 4px;
+  }
+  
+  .first-answer {
+    margin-top: 40px;
+  }
+  
+  .reset-button {
+    margin-top: 40px;
+  }
+  
+  .summary {
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 15pt;
+    color: rgb(31, 44, 37);
+    font-weight: bolder;
+  }
+  body {
+    background-image: url("../images/godbackground.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center top;
+    background-color: rgb(35, 70, 35);
+  }
+  
