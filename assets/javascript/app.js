@@ -12,7 +12,7 @@ var answers = [["Just the men", "The men and the women", "The men, women, and ch
                 ["Some chicken noodle soup.","$100 in today's dollars.","His two daughters instead.","A WWE style smackdown."], 
                 ["Sent bears out of the forest to maul all the children to death.", "Told Elisha to grow some thicker skin.", "Boomed down at the children to be kind and follow the Golden Rule.", "Decided to not get involved with such trivial matters."], 
                 ["Making Onan, himself, pregnant.","Killing Onan as well.","He made Onan lactose intolerant.","Decided not to punish him after all, because really that was a pretty disgusting request on the part of his father, Judah."], 
-                ["True", "False", "Only on the Sabbath.", "As long as they aksed forgiveness before entering the temple."], 
+                ["True", "False", "Only on the Sabbath.", "As long as they asked forgiveness before entering the temple."], 
                 ["Apologize to her husband for interferring.","She gets free chicken tenders for a year.","Her husband should buy her a beer.","Chop off her hand."]];
 var images = ["<img class='center-block img-right' src='assets/images/baby.jpg'>", 
                 "<img class='center-block img-right' src='assets/images/lot.jpg'>", 
