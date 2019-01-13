@@ -3,7 +3,7 @@
     box-sizing: border-box;
     height: 600px;
     margin: 2% 25%;
-    background-image: url("./assets/images/godbackground.jpg");
+    background-image: url("./assets/images/pillars.jpg");
   }
   
   .answer-container {
@@ -22,12 +22,22 @@
     height: 45px;
     color: black;
     padding-left: 14px;
-    background-color: rgba(65, 105, 225, 0.548);
+    background-color: rgba(65, 105, 225, 0.75);
     border-radius: 4px;
     padding-right: 20px;
     padding: 7px 20px;
   }
 
+  .textBox {
+    padding: 7px;
+    height: 45px;
+    color: black;
+    padding-left: 14px;
+    background-color: rgb(251,242,247, .75);
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-weight: bolder
+  }
   .answer:hover {
     background: goldenrod;
   }
@@ -37,7 +47,7 @@
     height: 45px;
     color: black;
     padding-left: 14px;
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0.76);
     border-radius: 4px;
   }
   
@@ -59,10 +69,15 @@
     font-weight: bolder;
   }
   body {
-    background-image: url("../images/godbackground.jpg");
+    background-image: url("../images/pillars.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center top;
-    background-color: rgb(35, 70, 35);
+    background-color: rgb(251,242,247, .75);
   }
   
+  h1 {
+    color: rgb(251,242,247);
+    font-size: 6vw;
+    text-shadow: 2px 2px rgba(65, 105, 225, 0.76)
+  }

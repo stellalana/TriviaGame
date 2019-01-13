@@ -2,30 +2,26 @@
 
 var startScreen;
 var timer = 30;
-var questions = ["In 1 Samuel, God orders the Israelites to attack the people of Amalek. Who did he command to be killed?", 
-                    "Abraham's nephew, Lot, once had two angel visitors disguised as men visit. When the men of Sodom demanded that Lot let them rape the visitors, what did Lot offer to them instead?", 
-                    "The prophet Elisha was once teased by a group of children for being bald as he was making his way down the road. He cursed the boys and the Lord did what?", 
-                    "Judah's first-born son, Er, was killed by the Lord. So Judah of course asked his second son, Onan, to sleep with Er's widow to give her a child. Onan refused to conceive with his sister-in-law, \"spilling his seed on the ground.\" How did the Lord punish Onan?", 
-                    "According to Leviticus, God welcomed the blind, lame, crippled, and disabled at his alter.", 
-                    "If a woman saves her husband in a brawl, pulverizing his attacker's peanuts - According to the Lord, what should be done?"];
-var answers = [["Just the men", "The men and the women", "The men, women, and children", "The men, women, children, nursing babies, and livestock"], 
-                ["Some chicken noodle soup.","$100 in today's dollars.","His two daughters instead.","A WWE style smackdown."], 
-                ["Sent bears out of the forest to maul all the children to death.", "Told Elisha to grow some thicker skin.", "Boomed down at the children to be kind and follow the Golden Rule.", "Decided to not get involved with such trivial matters."], 
-                ["Making Onan, himself, pregnant.","Killing Onan as well.","He made Onan lactose intolerant.","Decided not to punish him after all, because really that was a pretty disgusting request on the part of his father, Judah."], 
-                ["True", "False", "Only on the Sabbath.", "As long as they asked forgiveness before entering the temple."], 
-                ["Apologize to her husband for interferring.","She gets free chicken tenders for a year.","Her husband should buy her a beer.","Chop off her hand."]];
-var images = ["<img class='center-block img-right' src='assets/images/baby.jpg'>", 
-                "<img class='center-block img-right' src='assets/images/lot.jpg'>", 
-                "<img class='center-block img-right' src='assets/images/bears.jpg'>", 
-                "<img class='center-block img-right' src='assets/images/seed.jpg'>", 
-                "<img class='center-block img-right' src='assets/images/lame.jpg'>", 
-                "<img class='center-block img-right' src='assets/images/woman.jpg'>"];
-var correctAnswers = ["D. The men, women, children, nursing babies, and livestock", 
-                        "C. His two daughters instead.", 
-                        "A. Sent bears out of the forest to maul all the children to death.", 
-                        "B. Killing Onan as well.", 
-                        "B. False", 
-                        "D. Chop off her hand."];
+var questions = ["Who was the first aviator to fly across the Atlantic ocean in 1928?", 
+                    "Which American chemist invented Kevlar?", 
+                    "Who did the Germans dub the \"most dangerous of all allied spies\" in WWII?", 
+                    "Which Harvard computer engineer coined the words \"bug\" and \"debugging\"?", 
+                    "Who was the first person to win two Nobel Prizes?"];
+var answers = [["Jim Mollison", "Robert Newton", "Erich Hartmann", "Amelia Earhart"], 
+                ["Leo Baekeland","Linus Pauling","Stephanie Kwolek","Henry Eyring"], 
+                ["Virginia Hall", "Roman Czerniawski", "Peter Smithers", "William J. Donovan"], 
+                ["Howard Aiken","Grace Hopper","Steven J. Gortler","Mark Zuckerberg"], 
+                ["Theodore Roosevelt", "Marie Curie", "Albert Einstein", "Winston Churchill"]];
+var images = ["<img class='center-block img-right' src='assets/images/earhart.jpg'>", 
+                "<img class='center-block img-right' src='assets/images/kwolek.jpg'>", 
+                "<img class='center-block img-right' src='assets/images/hall.jpg'>", 
+                "<img class='center-block img-right' src='assets/images/hopper.jpg'>", 
+                "<img class='center-block img-right' src='assets/images/curie.jpg'>"];
+var correctAnswers = ["D. Amelia Earhart", 
+                        "C. Stephanie Kwolek", 
+                        "A. Virginia Hall", 
+                        "B. Grace Hopper", 
+                        "B. Marie Curie"];
 var counter = 0;
 var selecterAnswer;
 var clock;
@@ -100,13 +96,13 @@ $(document).ready(function() {
     
     // HTML insert
     function callHTML() {
-        htmlLink = "<p class='text-center clockClass'>Time: <span class='timer'>30</span></p><p>" + questions[counter] + "</p><p class='first-answer answer'>A. " + answers[counter][0] + "</p><p class='answer'>B. "+answers[counter][1]+"</p><p class='answer'>C. "+answers[counter][2]+"</p><p class='answer'>D. "+answers[counter][3]+"</p>";
+        htmlLink = "<p class='text-center clockClass'>Time: <span class='timer'>30</span></p><p>" + "<div class='textBox'>" + questions[counter] + "</div>" + "</p><p class='first-answer answer'>A. " + answers[counter][0] + "</p><p class='answer'>B. "+answers[counter][1]+"</p><p class='answer'>C. "+answers[counter][2]+"</p><p class='answer'>D. "+answers[counter][3]+"</p>";
         $(".javascriptClass").html(htmlLink);
     }
     
     // Timer guts
     function wait() {
-        if (counter < 5) {
+        if (counter < 4) {
         counter++;
         callHTML();
         timer = 30;
@@ -132,7 +128,7 @@ $(document).ready(function() {
     
     // Last page
     function finalScreen() {
-        htmlLink = "<p class='clockClass'>Time: <span class='timer'>" + timer + "</span></p>" + "<p>Well done my good and faithful servant <3" + "</p>" + "<p class='summary'>Correct: " + wins + "</p>" + "<p>Wrong: " + losses + "</p>" + "<p>Unanswered: " + timedOut + "</p>" + "<p class='reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Try Again!</a></p>";
+        htmlLink = "<p class='clockClass'>Time: <span class='timer'>" + timer + "</span></p>" + "<p>Great Job!" + "</p>" + "<p class='summary'>Correct: " + wins + "</p>" + "<p>Wrong: " + losses + "</p>" + "<p>Unanswered: " + timedOut + "</p>" + "<p class='reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Try Again!</a></p>";
         $(".javascriptClass").html(htmlLink);
     }
     
