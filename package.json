@@ -1,0 +1,23 @@
+{
+  "name": "triviagame",
+  "version": "1.0.0",
+  "description": "App that uses Javascript to time HTML elements and is responsive to user interaction with answer buttons.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellalana/TriviaGame.git"
+  },
+  "keywords": [
+    "Javascript",
+    "timers"
+  ],
+  "author": "Stella L. Griffith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stellalana/TriviaGame/issues"
+  },
+  "homepage": "https://github.com/stellalana/TriviaGame#readme"
+}
